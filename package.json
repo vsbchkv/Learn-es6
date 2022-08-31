@@ -1,0 +1,43 @@
+{
+  "name": "learn-es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://gitlab.noveogroup.com/vbychkov/learn-es6",
+  "private": "true",
+  "author": "vbychkov",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "js": "eslint --ignore-path .gitignore ."
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 3 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.8",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.22.0",
+    "html-webpack-plugin": "^5.2.0",
+    "jsdoc": "^3.6.6",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "eslint-webpack-plugin": "^2.5.2"
+  }
+}
